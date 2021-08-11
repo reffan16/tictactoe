@@ -58,10 +58,7 @@ def tictactoe():
                 print('You must enter two numerical coordinates!')
                 grid()
                 continue
-            if not row_coord.isnumeric():
-                print('You should enter numbers!')
-                grid()
-            elif not column_coord.isnumeric():
+            if not row_coord.isnumeric() or not column_coord.isnumeric():
                 print('You should enter numbers!')
                 grid()
             elif int(row_coord) not in range(1, 4) or int(column_coord) not in range(1, 4):
